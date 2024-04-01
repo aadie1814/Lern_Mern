@@ -1,0 +1,251 @@
+/* nav section */
+
+.navul{
+    list-style-type: none;
+    
+    overflow: hidden;
+    background-color: rgb(16, 16, 23);
+    text-align: left;
+    display: flex; 
+    margin-bottom: 0px; 
+}
+.nav{
+
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ a.active{
+     color: darkmagenta;
+ }
+/*  home section */
+.homebg{
+    background-color: rgb(185, 154, 119);
+}
+.i{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.cd2{
+    width: 400px !important;
+    text-align: center;
+    background-color: black;
+}
+.ih{
+    height: 50px;
+    width: 50px;
+    color: white;
+    margin: 20px;
+}
+.crd{
+    margin-top: 15%;
+}
+.book{
+    width: 100px;
+    height: 50px;
+    margin-left: 45%;
+    text-align: center;
+    
+}
+/* about section */
+.pro{
+    width: 70%;
+    
+}
+.pro1{
+    width: 72%;
+    background-color: orange;
+}
+.pro2{
+    width: 88%;
+    background-color: green;
+}
+ /* Registation section */
+ .fromrg{
+    background-color: rgba(231, 229, 230, 0.534);
+   overflow-y: auto;
+ }
+ .br{
+    background-color: lightsalmon;
+ }
+ .lable{
+    margin-left: 5%;
+    color: black;
+}
+ .forminput{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    margin-left: 30px;
+    width: 90%;
+}
+input[type=email]:focus {
+    box-shadow: none;
+}
+input[type=password]:focus{
+    box-shadow: none;
+}
+input[TYPE=pass]:focus{
+    box-shadow: none;
+}
+input[type=text]:focus {
+    box-shadow: none;
+}
+/* Login section */
+.frombg{
+    background-color: rgba(231, 229, 230, 0.534);
+    
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    
+ }
+ .lgf{
+    background-color: white;
+    margin: 0px;
+ }
+ .formiinput{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 2;
+    margin-left: 50px;
+    width: 80%;
+}
+ .loginn{
+    text-align: center;
+    width: 10%;
+ }
+.emaili{
+    margin: 10px;
+    display: block;
+    color: black;
+    height: 5%;
+    width: 2%;
+    margin-left: 2%;
+}
+.pass{
+    margin: 10px;
+    display: block;
+    color: black;
+    height: 5%;
+    width: 5%;
+    margin-left: 2%;
+}
+.dd{
+    margin-left: 15%; 
+}
+.b{
+    width: 20%;
+    margin-left: 35%;
+}
+/* services section */
+.card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+    
+  
+
+/* contact section */
+.buttons{
+    width: 25%;
+    margin-left: 35%;
+}
+/* sidebar section */
+.sidebar{
+    float: left;
+    left: 0px;
+   /*  padding: 2%;
+    margin: 1%; */
+    margin-top: 8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:20%;
+    height: 90%;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    
+}
+/* Admin section table */
+.tablepo {
+    
+    float: right;
+    right: 0px;
+    width: 80%;
+    padding: 50;
+    margin: 40px;
+    margin-top: 8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:75%;
+    height: auto;
+    border: 2px solid;
+    
+    background-color: black;
+    color: white;
+}
+tr{
+    border: 1px solid white !important;
+    padding: 10px;
+    margin: 2px;
+}
+td{
+    border: 1px solid white !important;
+}
+.list{
+    padding: 20px;
+    list-style-type: none;
+    
+}
+
+/* admin user contact */
+.conmo{
+    margin-top: 12%;
+    margin-left: 45%;
+
+}
+/* admin services */
+.serform{
+    float: right;
+    right: 0px;
+    width: 80%;
+    padding: 50;
+    margin: 40px;
+    margin-top: 8%;
+    margin-right: 15%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:50%;
+    height: auto;
+    box-shadow: 3px 4px 6px 0px gray;
+    
+    /* background-color: black; */
+    color: white;
+}
+.form{
+   
+        /* border: none; */
+        border-bottom: 1px solid black;
+        border-radius: 0;
+        margin-left: 40px;
+   
+        width: 80%;
+}
