@@ -78,11 +78,11 @@ const Register =() =>{
             <div className="container pt-4 ">
                 <div className="row p-5">
                     <div className="col-md-6 p-0">
-                         { <img src={pic} alt='' height="600px" width="100%"></img> }  
+                         { <img src={pic} alt='' height="550px" width="100%"></img> }  
                     </div>
-                    <div className="col-md-6 br">
+                    <div className="col-md-6 ">
                         <form onSubmit={sendData}>
-                           <h2 className=" text-center mt-3">Registration</h2>
+                           <h2 className=" text-center">Registration</h2>
                            <label className="lable ">Name:</label>
                            <input value={user.name} onChange={handleInput} type="text" className="form-control forminput" placeholder="Name" id="text" name="name"></input> <br/>
                            <label className="lable">Email:</label>

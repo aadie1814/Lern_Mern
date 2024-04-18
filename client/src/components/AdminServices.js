@@ -1,9 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useContext } from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+import { Authcontext } from "../store/auth.js";
 const AdminServices = () => {
     const [service_name, setService_name] = useState("")
     const [description, setDescription,] = useState("")
     const [uploadFile, setUploadFile] = useState("")
+    const {authorizationToken} = useContext(Authcontext)
+    
     const file= useRef("");
 
     const addService = async (e) =>{
@@ -15,8 +18,12 @@ const AdminServices = () => {
 
         try{
             const dataToAdd =await fetch('http://localhost:9000/api/admin/service/post',{
+                headers: {
+                  authorization:authorizationToken
+                },
                 method:'POST',
                 body: data
+                
             })
             const res = await dataToAdd.json()
             console.log(res)

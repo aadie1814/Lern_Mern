@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useContext } from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.js'
+import { Authcontext } from "../store/auth.js";
 const AdminContact = () => {
     const [contact, setcontact] = useState([])
     const [modelid, setModelid] = useState("")
+    const {authorizationToken} = useContext(Authcontext)
     const getData = async () => {
         try {
-            const data = await fetch('http://localhost:9000/api/admin/contact')
+            const data = await fetch('http://localhost:9000/api/admin/contact',{
+                headers: {
+                  authorization:authorizationToken
+                }
+              })
             const res = await data.json()
             console.log(res)
             setcontact(res)

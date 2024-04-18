@@ -85,6 +85,17 @@ const login =async (req,res)=>{
         console.log(error)
         res.stutes(400).json({msg: 'Unble to login'})
     }
-  }
+}
+    const getUser = async (req,res) =>{
+        try{
+            const userData = req.user
+            console.log(userData) 
+            return res.status(200).json( userData)
+        }
+        catch(error){
+           res.status(500).json({msg: 'unable to find data'})
+        }
+    }
+  
 
-module.exports = {register, login}
+module.exports = {register, login , getUser}

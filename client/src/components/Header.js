@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
-import pic from '../image/logoaj.png'
+import pic from '../image/logo.jpg'
 import style from '../Header.modules.css'
 import { Authcontext } from "../store/auth";
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
             </div> */}
             <nav class="navbar navbar-expand-md navul  ">
                 <div class="container-fluid">
-                    {<img src={pic} alt='' class="rounded-circle " height="60px" width="200px " ></img>}
+                    {<img src={pic} alt='' height="60px" width="200px " ></img>}
                     <button class="navbar-toggler btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon "></span>
                     </button>

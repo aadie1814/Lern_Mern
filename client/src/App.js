@@ -33,7 +33,7 @@ function App() {
               <Route path='deleteservice'element={<AdminDeleteService/>}></Route>
               
           </Route>
-          <Route path='/error' element={<Error />}></Route>
+          <Route path='*' element={<Error />}></Route>
          {/*  <Route path='/logout'element={<Logout/>}></Route> */}
         </Routes>
       </BrowserRouter>

@@ -24,9 +24,11 @@ const Services =() =>{
             <section className="fromb">
                 <div class="container pt-4 ">
                    <div class="row text-center  p-5" >
+                    <h3> Our Services</h3><br/>
                        {
                             services.map((value) => {
                                 return <div class="col-md-4 mb-3 "> 
+                                
                                     <div class="card ">
                                         <div className=" card-body d-flex justify-content-around">
                                             <div>

@@ -4,7 +4,7 @@
     list-style-type: none;
     
     overflow: hidden;
-    background-color: rgb(16, 16, 23);
+    background-color: black;
     text-align: left;
     display: flex; 
     margin-bottom: 0px; 
@@ -29,11 +29,15 @@ a{
      color: darkmagenta;
  }
 /*  home section */
-.homebg{
-    background-color: rgb(185, 154, 119);
-}
+
+
 .i{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-style: italic !important; */
+}
+.i11{
+   
+    font-size: 60px;
     font-style: italic;
 }
 .cd2{
@@ -48,7 +52,7 @@ a{
     margin: 20px;
 }
 .crd{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .book{
     width: 100px;
@@ -70,6 +74,10 @@ a{
     width: 88%;
     background-color: green;
 }
+.aboutbgi{
+    background-color: black;
+}
+
  /* Registation section */
  .fromrg{
     background-color: rgba(231, 229, 230, 0.534);
@@ -248,4 +256,12 @@ td{
         margin-left: 40px;
    
         width: 80%;
+}
+/* footer section */
+.icon1{
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    margin-left: 5%;
+    color: white;
 }
