@@ -7,14 +7,14 @@ const AdminServices = () => {
     const [uploadFile, setUploadFile] = useState("")
     const {authorizationToken} = useContext(Authcontext)
     
-    const file= useRef("");
+    const file= useRef();
 
     const addService = async (e) =>{
         e.preventDefault()
         const data = new FormData()
         data.append('service_name',service_name)
         data.append('description',description)
-        data.append('uploadFile',uploadFile)
+        data.append('uploadFile',file.current.files[0])
 
         try{
             const dataToAdd =await fetch('http://localhost:9000/api/admin/service/post',{
@@ -29,7 +29,7 @@ const AdminServices = () => {
             console.log(res)
             setService_name("")
             setDescription("")
-            file.current.value = ("")
+            setUploadFile("")
         }
         catch (error){
             console.log(error)
@@ -45,7 +45,7 @@ const AdminServices = () => {
                 <label className="lable text-dark"> SERVICES DESCRIPTION:</label>
                 <input type='text' value={description} onChange={(e) => setDescription(e.target.value)} className="form-control form" placeholder="DESCRIPTION" id="text" name="contact"></input> <br />
                 <label className="lable text-dark ">IMAGE:</label>
-                <input ref={file} type='file'  onChange={(e) => setUploadFile(e.target.files[0])} className="form-control form" placeholder="IMAGE" id="text" name="name"></input> <br />
+                <input  type='file' value={uploadFile} ref={file}  onChange={(e) => setUploadFile(e.target.files)} className="form-control form" placeholder="IMAGE" id="text" name="name"></input> <br />
                 
                 <button type="submit" class="btn btn-primary buttons ">Submit</button><br /><br />
             </form>
